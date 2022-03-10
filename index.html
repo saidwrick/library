@@ -8,8 +8,34 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="prompt">
+        <div class="form">
+            <div class="close-button">X</div>
+            <div class="form-title">Add A Book</div>
+            <form id="book-form" method="get" action="">
+                <div class="form-group">
+                    <label for="title">Title</label>
+                    <input type="text" id="title" name="title">
+                </div>
+                <div class="form-group">
+                    <label for="author">Author</label>
+                    <input type="text" id="author" name="author">
+                </div>
+                <div class="form-group">
+                    <label for="pages">Pages</label>
+                    <input type="number" id="pages" name="pages">
+                </div>
+                <div class="form-group">
+                    <label for="read">Read</label>
+                    <input type="checkbox" id="read" name="read">
+                </div>
+            </form>
+            <button id ="form-submit" type="text" form="book-form">submit</button>
+        </div>
+    </div>
+
     <header>MY LIBRARY
-        
+        <button class = "add-book-button">Add Book</button>
     </header>
     <div class="library">
         <div class="card">
@@ -27,5 +53,6 @@
             <div class="title">The Really Long Book Name For A Book</div>
         </div> 
     </div>
+
 <script src="script.js"></script>
 </body>
